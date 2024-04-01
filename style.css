@@ -1,45 +1,84 @@
+body {
+  background-color: #f3f4fd;
+  font-family: "Inter", sans-serif;
+}
 
-body{
-    background-color:#CCCCCC;
+main {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: 100%;
+  height: 100vh;
+  padding: 0 2rem;
 }
-.title{
-    color: blue;
-    font-size: 22px;
-    padding: 20px 20px;
-    text-transform: uppercase;
-    text-decoration: solid;
-    font-family: Verdana;
+
+.title {
+  color: #0a3970;
+  font-size: 24px;
+  font-weight: 700;
+  padding: 20px 20px;
+  text-transform: uppercase;
+  text-decoration: solid;
 }
-.cajas{
-    display: flex;
+.cajas {
+  display: flex;
+  width: 100%;
+  gap: 20px;
 }
-.caja-texto{
-    margin-left: 20px;
+.mensaje-texto {
+  min-height: 550px;
+  min-width: 500px;
+  resize: none;
+  background-color: transparent;
+  font-size: 22px;
+  border-radius: 5px;
+  padding: 15px;
 }
-.mensaje-texto{
-    min-height: 550px;
-    min-width: 500px;
-    resize: none;
-    margin:auto;
-    background-color: transparent;
-    font-family: verdana;
-    font-size: 22px;
+
+.caja-texto textarea{
+    font-family: "Inter", sans-serif;
+
 }
-.caja-copiar{
-    background-image: url("imagenes/p.png");
-    background-size: cover;
-    background-repeat: no-repeat;
-    margin-left: 100px;
+
+.caja-copiar {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  height: 100%;
+  background-color: #fff;
+  border-radius: 5px;
 }
-.mensaje-copiar{
-    min-width: 250px;
-    min-height: 55px;
-    font-size: 12px;
-    opacity: 0;
+.caja-copiar textarea {
+  display: none;
+  width: 100%;
+  height: 100%;
 }
-.buttons{
+
+.buttons {
+  display: flex;
+  gap: 10px;
 }
-footer{
-    color: blue;
-    text-align: center;
+button {
+  all: unset;
+  font-size: 16px;
+  background-color: #4338ca;
+  padding: 0.3rem 0.8rem;
+  color: #fff;
+  border-radius: 3px;
+  cursor: pointer;
+  transition-property: color, background-color, border-color,
+    text-decoration-color, fill, stroke;
+  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+  transition-duration: 150ms;
+}
+
+button:hover {
+  background-color: #675bf1;
+}
+
+footer {
+  color: blue;
+  text-align: center;
 }
