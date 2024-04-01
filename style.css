@@ -1,0 +1,45 @@
+
+body{
+    background-color:#CCCCCC;
+}
+.title{
+    color: blue;
+    font-size: 22px;
+    padding: 20px 20px;
+    text-transform: uppercase;
+    text-decoration: solid;
+    font-family: Verdana;
+}
+.cajas{
+    display: flex;
+}
+.caja-texto{
+    margin-left: 20px;
+}
+.mensaje-texto{
+    min-height: 550px;
+    min-width: 500px;
+    resize: none;
+    margin:auto;
+    background-color: transparent;
+    font-family: verdana;
+    font-size: 22px;
+}
+.caja-copiar{
+    background-image: url("imagenes/p.png");
+    background-size: cover;
+    background-repeat: no-repeat;
+    margin-left: 100px;
+}
+.mensaje-copiar{
+    min-width: 250px;
+    min-height: 55px;
+    font-size: 12px;
+    opacity: 0;
+}
+.buttons{
+}
+footer{
+    color: blue;
+    text-align: center;
+}
